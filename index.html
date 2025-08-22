@@ -101,7 +101,7 @@
       const {system, user} = buildSystemAndUser(mode, prompt);
 
       try {
-        const res = await fetch('/api/chat', {
+        const res = await fetch("https://ai-chat-6v6e.onrender.com/api/chat", {
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
